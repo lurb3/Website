@@ -1,1 +1,25 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+body {
+    background-color:#132678;
+}
+
+.frontpage-copy {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    left:50%;
+    transform: translateX(-50%);
+    margin:0px;
+    padding:0px;
+    color:#BCBCBC;
+    h1 {
+        font-family: 'Passion One', cursive;
+        font-size:42px;
+        letter-spacing: 5%;
+    }
+    p {
+        font-family: 'Pontano Sans', sans-serif;
+        font-size:24px;
+        letter-spacing: 1%;
+    }
+}

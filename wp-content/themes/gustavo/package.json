@@ -52,5 +52,8 @@
     "run-sequence": "^2.2.1",
     "undescores-for-npm": "^1.0.0",
     "gulp-autoprefixer": "6.0.0"
+  },
+  "devDependencies": {
+    "gulp-cli": "^2.0.1"
   }
 }

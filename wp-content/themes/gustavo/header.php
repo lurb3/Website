@@ -23,6 +23,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -30,8 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+	<!--<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
@@ -41,7 +42,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container" >
 		<?php endif; ?>
 
-					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
@@ -57,13 +57,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php } else {
 						the_custom_logo();
-					} ?><!-- end custom logo -->
+					} ?><
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
@@ -77,9 +76,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
+			</div>
 			<?php endif; ?>
 
-		</nav><!-- .site-navigation -->
+		</nav>
 
-	</div><!-- #wrapper-navbar end -->
+	</div>-->
