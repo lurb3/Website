@@ -10,7 +10,13 @@ footer {
 
 .arrow {
     display:block;
+    transform: translateY(20px);
+    transition: 1s;
     img {
         max-width:20px;
+    }
+    &:hover {
+        transform: translateY(0px);
+        transition: 1s;
     }
 }

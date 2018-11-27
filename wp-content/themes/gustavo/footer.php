@@ -15,11 +15,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <footer>
-	<span class="arrow">
-		<img src="<?php echo get_template_directory_uri(); ?>/images/arrow.png">
-	</span>
-	Menu
-
+	<div id="menuBtn">
+		<span class="arrow">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/arrow.png">
+		</span>
+		Menu
+	</div>
 </footer>
 
 
