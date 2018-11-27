@@ -1,6 +1,6 @@
 
 body {
-    background-color:#132678;
+    background-color:$primary;
 }
 
 .frontpage-copy {
@@ -11,11 +11,11 @@ body {
     transform: translateX(-50%);
     margin:0px;
     padding:0px;
-    color:#BCBCBC;
+    color: $grey;
     h1 {
-        font-family: 'Passion One', cursive;
-        font-size:42px;
+        font-size: $mainFontsize;
         letter-spacing: 5%;
+        font-family: $mainFont;
     }
     p {
         font-family: 'Pontano Sans', sans-serif;

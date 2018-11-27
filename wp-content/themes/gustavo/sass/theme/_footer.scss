@@ -1,0 +1,16 @@
+footer {
+    font-family: $mainFont;
+    color: $grey;
+    position:fixed;
+    bottom:0px;
+    left:47%;
+    font-size: $mainFontsize;
+    text-align:center;
+}
+
+.arrow {
+    display:block;
+    img {
+        max-width:20px;
+    }
+}
