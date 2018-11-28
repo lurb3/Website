@@ -151,7 +151,7 @@ gulp.task( 'scripts', function() {
     ];
   gulp.src( scripts )
     .pipe( concat( 'theme.min.js' ) )
-    .pipe( uglify() )
+    /*.pipe( uglify() )*/ //Uglify seems to cause gulp to crash
     .pipe( gulp.dest( paths.js ) );
 
   gulp.src( scripts )

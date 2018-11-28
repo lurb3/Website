@@ -6496,5 +6496,7 @@
 
 let a = function (){
     let menuBtn = document.getElementById("menuBtn");
-    console.log("q");
+    console.log("qwewqewq");
 }
+
+a();
