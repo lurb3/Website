@@ -18,8 +18,8 @@ body {
         font-family: $mainFont;
     }
     p {
-        font-family: 'Pontano Sans', sans-serif;
-        font-size:24px;
+        font-family: $secondaryFont;
+        font-size:$textFontsize;
         letter-spacing: 1%;
     }
 }

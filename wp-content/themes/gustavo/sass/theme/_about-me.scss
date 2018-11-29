@@ -3,30 +3,16 @@ footer {
     color: $grey;
     position:fixed;
     bottom:0px;
+    font-size: ($mainFontsize)-15px;
     text-align:center;
     background-color:white;
     width:100%;
     ul {
+        margin:5px 5px;
         li {
-            padding:10px 17px 10px 0px;
-            transition: 0.4s;
-            font-size:23px;
             display:inline-block;
             color:#4C4C4C;
-            cursor:pointer;
-            &:hover {
-                transition: 0.4s;
-                transform:scale(1.5, 1.5);
-                color:#054bca;
-            }
-            a {
-                color:#4C4C4C;
-                text-decoration:none;
-                &:hover {
-                    text-decoration:none;
-                    color:#054bca;
-                }
-            }
+            margin-right:25px;
         }
     }
 }

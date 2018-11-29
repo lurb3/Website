@@ -15,12 +15,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <footer>
-	<div id="menuBtn">
+	<ul>
+		<a href="<?php echo get_home_url();?>">
+			<li>ABOUT ME</li>
+		</a>
+		<a href="<?php echo get_site_url();?>/about-me">
+			<li>PORTFOLIO</li>
+		</a>
+		<a href="<?php echo get_site_url();?>/about-me">
+			<li>CURRICULUM</li>
+		</a>
+		<a href="<?php echo get_site_url();?>/about-me">
+			<li>BLOG</li>
+		</a>
+		<a href="<?php echo get_site_url();?>/about-me">
+			<li>CONTACT ME</li>
+		</a>
+	</ul>
+	<!--<div id="menuBtn">
 		<span class="arrow">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/arrow.png">
 		</span>
 		Menu
-	</div>
+	</div>-->
 </footer>
 
 
