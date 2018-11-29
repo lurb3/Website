@@ -1,6 +1,12 @@
-let a = function (){
-    let menuBtn = document.getElementById("menuBtn");
-    console.log("qwewqewq");
-}
+let menu = document.getElementById("menu");
+let links = menu.getElementsByTagName("a");
+links[2].className += " active";
 
-a();
+for(i=0; i<links.length; i++) {
+    console.log(links[i]);
+    links[i].addEventListener("click", function() {
+        let current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace("active", "");
+        this.className += " active";
+    });
+}
