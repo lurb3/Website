@@ -3,23 +3,39 @@ body {
     background-color:$primary;
 }
 
-.frontpage-copy {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-40%);
-    left:50%;
-    transform: translateX(-50%);
+.frontpage {
+    position:absolute; 
+    top:50%;
+    transform: translate(-50%, -50%);
     margin:0px;
-    padding:0px;
+    left:50%;
+}
+
+.frontpage-copy {
+    
     color: $grey;
     h1 {
         font-size: $mainFontsize;
-        letter-spacing: 5%;
         font-family: $mainFont;
+        font-weight:100;
+    }
+    h2 {
+        font-size: $mainFontsize;
+        font-family: $mainFont;
+        font-weight:100;    
     }
     p {
         font-family: $secondaryFont;
         font-size:$textFontsize;
-        letter-spacing: 1%;
+        letter-spacing: 2px;
+        font-weight:300;
+    }
+}
+
+.social-icons a{
+    color:$grey;
+    font-size:30px;
+    &:hover {
+        color:white;
     }
 }

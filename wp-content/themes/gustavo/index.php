@@ -21,14 +21,19 @@ $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
 
-<div class="container-flex">
+<div class="container frontpage">
 	<div class="row frontpage-copy">
-		<h1 class="m-auto pb-5 w-100 text-center">Hello, I'm Gustavo!</h1>
+		<h1 class="m-auto pb-2 w-100 text-center">Gustavo Monteiro</h1>
+		<h2 class="m-auto pb-5 w-100 text-center">Junior Front-End Developer</h2>
 		<p class="m-auto w-100 text-center">
-			I am passionate about Web Design and I've been working on it for about 2 years.<br>
-			My Personal passion is Front-End Development.<br>
-			I'm a fast learner and I hate not to learn new things.
+			Porto - Portugal<br>
+			gustavo.gigante.s@gmail.com
 		</p>
+	</div>
+	<div class="social-icons text-center mt-3">
+		<a href="https://www.linkedin.com/in/gustavo-monteiro/" target="_blank"><i class="fab fa-linkedin-in pr-3"></i></a>
+		<a href="https://twitter.com/GustavoM0nteiro" target="_blank"><i class="fab fa-twitter pr-3"></i></a>
+		<a href="https://github.com/lurb3" target="_blank"><i class="fab fa-github"></i></a>
 	</div>
 </div>
 

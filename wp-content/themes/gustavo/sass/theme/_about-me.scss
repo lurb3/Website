@@ -3,7 +3,7 @@ footer {
     color: $grey;
     position:fixed;
     bottom:0px;
-    font-size: ($mainFontsize)-15px;
+    font-size: $mainFontsize;
     text-align:center;
     background-color:white;
     width:100%;
@@ -16,21 +16,3 @@ footer {
         }
     }
 }
-
-/*.arrow {
-    display:block;
-    transform: translateY(20px);
-    img {
-        max-width:20px;
-    }
-}
-
-.menuBtn {
-    transition: 0.5s;
-    &:hover {
-        .arrow {
-            transform: translateY(0px);
-            transition: 0.5s;
-        }
-    }
-}*/
