@@ -23,12 +23,23 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <div class="container frontpage">
 	<div class="row frontpage-copy">
-		<h1 class="m-auto pb-2 w-100 text-center">Gustavo Monteiro</h1>
-		<h2 class="m-auto pb-5 w-100 text-center">Junior Front-End Developer</h2>
-		<p class="m-auto w-100 text-center">
-			Porto - Portugal<br>
-			gustavo.gigante.s@gmail.com
-		</p>
+		<div class="col-md-6 col-xs-12">
+			<h1 class="m-auto pb-2 w-100 text-center">Gustavo Monteiro</h1>
+			<h2 class="m-auto pb-5 w-100 text-center">Junior Front-End Developer</h2>
+			<p class="m-auto w-100 text-center">
+				Porto - Portugal<br>
+				gustavo.gigante.s@gmail.com
+			</p>
+		</div>
+		<div class="col-md-6 col-xs-12">
+			<ul class="home-links">
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Curriculum</a></li>
+				<li><a href="#">Contact Me</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="social-icons text-center mt-3">
 		<a href="https://www.linkedin.com/in/gustavo-monteiro/" target="_blank"><i class="fab fa-linkedin-in pr-3"></i></a>
