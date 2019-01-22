@@ -23,7 +23,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <div class="container frontpage">
 	<div class="row frontpage-copy">
-		<div class="col-md-6 col-xs-12">
+		<div class="col-12 text-center">
 			<h1 class="m-auto pb-2 w-100 text-center">Gustavo Monteiro</h1>
 			<h2 class="m-auto pb-5 w-100 text-center">Junior Front-End Developer</h2>
 			<p class="m-auto w-100 text-center">
@@ -31,7 +31,14 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				gustavo.gigante.s@gmail.com
 			</p>
 		</div>
-		<div class="col-md-6 col-xs-12">
+	</div>
+	<div class="social-icons text-center mt-3">
+		<a href="https://www.linkedin.com/in/gustavo-monteiro/" target="_blank"><i class="fab fa-linkedin-in pr-3"></i></a>
+		<a href="https://twitter.com/GustavoM0nteiro" target="_blank"><i class="fab fa-twitter pr-3"></i></a>
+		<a href="https://github.com/lurb3" target="_blank"><i class="fab fa-github"></i></a>
+	</div>
+	<div class="row mt-5">
+		<div class="col-12 text-center">
 			<ul class="home-links">
 				<li><a href="#">About Me</a></li>
 				<li><a href="#">Projects</a></li>
@@ -40,11 +47,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<li><a href="#">Contact Me</a></li>
 			</ul>
 		</div>
-	</div>
-	<div class="social-icons text-center mt-3">
-		<a href="https://www.linkedin.com/in/gustavo-monteiro/" target="_blank"><i class="fab fa-linkedin-in pr-3"></i></a>
-		<a href="https://twitter.com/GustavoM0nteiro" target="_blank"><i class="fab fa-twitter pr-3"></i></a>
-		<a href="https://github.com/lurb3" target="_blank"><i class="fab fa-github"></i></a>
 	</div>
 </div>
 

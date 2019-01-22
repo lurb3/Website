@@ -43,18 +43,26 @@ body {
     padding:0;
     text-align:center;
     li {
-        padding-top:20px;
-        &:first-child {
-            padding-top:0px;
-        }
+        display:inline-block;
+        padding-right:20px;
         a{
             color:$grey;
-            font-size:25px;
+            font-size:30px;
             font-weight:300;
             background: none;
-            &:hover {
-                background-color:red;
-                transition: background 300ms ease-in 200ms;
+            text-decoration: none;
+            &:after {
+                content: '';
+                width: 0px;
+                height: 1px;
+                display: block;
+                background: white;
+                transition: 300ms ease-in-out;
+            }
+            &:hover{
+                &:after {
+                    width:100%;
+                }
             }
         }
     }
