@@ -30,27 +30,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-6 text-dark text-center">
-				<div class="mr-1 bg-light">
-					<?php echo $title; ?>
-				</div>
-				<p class="bg-light">
-					<?php $args = array( 'numberposts' => -1); 
-$posts= get_posts( $args );
-if ($posts) {
-    foreach ( $posts as $post ) {
-        setup_postdata($post);
-        the_title();
-        the_excerpt();
-    }
-} ?>
-				</p>
-			</div>
-			<div class="col-6 text-dark text-center">
-				<div class="ml-1 bg-light">
-					B
-				</div>
-			</div>
+				<?php 
+					$args = array( 'numberposts' => -1); 
+					$posts= get_posts( $args );
+					$count = 0;
+					if ($posts) {
+						foreach ( $posts as $post ) {
+							echo "<div class='col-6 text-dark text-center p-3'>";
+								echo "<div class='bg-light p-2'>";
+									setup_postdata($post);
+									the_title();
+									the_content();
+									the_excerpt();
+								echo "</div>";
+							echo "</div>";
+						}
+					} 
+				?>
 		</div>
 	</div>	
 
