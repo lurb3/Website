@@ -42,7 +42,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			<ul class="home-links">
 				<li><a href="#">Sobre</a></li>
 				<li><a href="#">Projetos</a></li>
-				<li><a href="#">Blog</a></li>
+				<li><a href="gustavo-site/blog">Blog</a></li>
 				<li><a href="#">Curriculum</a></li>
 				<li><a href="#">Contactos</a></li>
 			</ul>

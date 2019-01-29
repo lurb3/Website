@@ -1,3 +1,10 @@
 #blog {
-
+    .understrap-read-more-link {
+        background-color:white;
+        color:$primary;
+        &:hover {
+            background-color:$primary;
+            color:white;
+        }
+    }
 }
