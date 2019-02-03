@@ -37,17 +37,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		<a href="https://twitter.com/GustavoM0nteiro" target="_blank"><i class="fab fa-twitter pr-3"></i></a>
 		<a href="https://github.com/lurb3" target="_blank"><i class="fab fa-github"></i></a>
 	</div>
-	<div class="row mt-5">
-		<div class="col-12 text-center">
-			<ul class="home-links">
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Projetos</a></li>
-				<li><a href="gustavo-site/blog">Blog</a></li>
-				<li><a href="#">Curriculum</a></li>
-				<li><a href="#">Contactos</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include 'inc/nav-menu.php'; ?> <!-- Include Nav Menu -->
 </div>
 
 <?php get_footer(); ?>

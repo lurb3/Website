@@ -24,9 +24,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div id="blog">
 
 	<div class="container">
-		<div class="row mb-5 mt-5">
+		<div class="row mt-5">
 			<div class="col-12 text-center">
-				<h2 class="text-light">Latest Posts</h2>
+				<ul class="home-links">
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Projetos</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Curriculum</a></li>
+					<li><a href="#">Contactos</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row mb-2 mt-2">
+			<div class="col-12 text-center">
+				<h2 class="text-light">Blog</h2>
 			</div>
 		</div>
 		<div class="row">

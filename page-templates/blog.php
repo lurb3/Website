@@ -24,17 +24,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div id="blog">
 
 	<div class="container">
-		<div class="row mt-5">
-			<div class="col-12 text-center">
-				<ul class="home-links">
-					<li><a href="#">Sobre</a></li>
-					<li><a href="#">Projetos</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Curriculum</a></li>
-					<li><a href="#">Contactos</a></li>
-				</ul>
-			</div>
-		</div>
+		<?php
+			$wp_root_path = str_replace('/wp-content/themes/gustavo', '', get_theme_root());
+			include get_template_directory() . '/inc/nav-menu.php';
+		?> <!-- Include Nav Menu --> <!-- Include Nav Menu -->
 		<div class="row mb-2 mt-2">
 			<div class="col-12 text-center">
 				<h2 class="text-light">Blog</h2>
