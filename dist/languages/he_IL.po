@@ -497,7 +497,7 @@ msgstr "בחר מפגשים"
 
 #: woocommerce/myaccount/downloads.php:43
 msgid "No downloads available yet."
-msgstr "אין עדיין ה��רדות זמינות."
+msgstr "אין עדיין הורדות זמינות."
 
 #: woocommerce/myaccount/form-edit-account.php:30
 msgid "First name"
