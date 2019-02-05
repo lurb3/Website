@@ -1,4 +1,4 @@
-<div class="row mt-5">
+<div class="row nav-menu">
     <div class="col-12 text-center">
         <ul class="home-links">
             <li><a href="#">Sobre</a></li>

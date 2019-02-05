@@ -40,4 +40,5 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	<?php include 'inc/nav-menu.php'; ?> <!-- Include Nav Menu -->
 </div>
 
+
 <?php get_footer(); ?>

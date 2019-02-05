@@ -10,6 +10,9 @@ body {
     transform: translate(-50%, -50%);
     margin:0px;
     left:50%;
+    @media only screen and (max-height: 409px) {
+        transform: translate(-50%, -30%);
+    }
 }
 
 .frontpage-copy {
@@ -29,6 +32,9 @@ body {
         font-size:$textFontsize;
         letter-spacing: 2px;
         font-weight:300;
+        @media only screen and (max-width: 502px) {
+            padding-top:50px;
+        }
     }
 }
 
@@ -37,6 +43,13 @@ body {
     font-size:30px;
     &:hover {
         color:white;
+    }
+}
+
+.nav-menu {
+    margin-top:50px;
+    @media only screen and (max-width: 502px) {
+        margin-top:90px;
     }
 }
 
