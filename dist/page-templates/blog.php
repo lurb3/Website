@@ -25,7 +25,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="container">
 		<?php
-			$wp_root_path = str_replace('/wp-content/themes/gustavo', '', get_theme_root());
 			include get_template_directory() . '/inc/nav-menu.php';
 		?> <!-- Include Nav Menu --> <!-- Include Nav Menu -->
 		<div class="row mb-2 mt-2">
@@ -43,8 +42,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							echo "<div class='col-6 text-dark text-center p-3'>";
 								echo "<div class='bg-light p-2'>";
 									setup_postdata($post);
+									the_post_thumbnail();
 									the_title();
-									the_content();
 									the_excerpt();
 								echo "</div>";
 							echo "</div>";
