@@ -13,5 +13,9 @@
     .sobre-content p {
         padding-left:15rem;
         padding-right:15rem;
+        @media only screen and (max-width: 991px) {
+            padding-left:5px;
+            padding-right:5px;
+        }
     }
 }

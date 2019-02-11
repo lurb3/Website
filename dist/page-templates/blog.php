@@ -27,11 +27,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php
 			include get_template_directory() . '/inc/nav-menu.php';
 		?> <!-- Include Nav Menu --> <!-- Include Nav Menu -->
-		<div class="row mb-2 mt-2">
-			<div class="col-12 text-center">
-				<h2 class="text-light">Blog</h2>
-			</div>
-		</div>
 		<div class="row">
 				<?php 
 					$args = array( 'numberposts' => -1); 
