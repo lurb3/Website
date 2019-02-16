@@ -769,7 +769,7 @@ msgid ""
 "assets\" inside the extracted /understrap folder."
 msgstr ""
 "Сочетание темы _s от Automatic и Bootstrap 4. Надежный базис для создания "
-"ваших собственных тем и вебсайтов на WordPress. Используйте как основную или "
+"ваших собственных тем и вебсайтов на WordPress. Используйт�� как основную или "
 "как родительскую тему. Все в ваших руках."
 
 #. Theme URI of the theme

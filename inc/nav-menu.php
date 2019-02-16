@@ -1,4 +1,4 @@
-<div class="row nav-menu">
+<div class="row nav-menu mb-5">
     <div class="col-12 text-center">
         <ul class="home-links">
             <li><a href="<?php echo get_page_link( get_page_by_title( "sobre" )->ID ); ?>">Sobre</a></li>
