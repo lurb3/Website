@@ -28,28 +28,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 			include get_template_directory() . '/inc/nav-menu.php';
 		?> <!-- Include Nav Menu --> <!-- Include Nav Menu -->
 		<div class="row">
-			<div class="col-12">
-				<?php 
+		<?php 
 					$args = array( 'numberposts' => -1); 
 					$posts= get_posts( $args );
 					$count = 0;
 					if ($posts) {
 						foreach ( $posts as $post ) {
-							echo "<div class='col-6 text-dark text-center p-3'>";
-								echo "<div class='bg-light p-2'>";
+							echo "<div class='col-md-4 col-xs-12 pl-5 pr-5'>";
+								echo "<div style='box-shadow: 6px 6px 15px -3px rgba(0,0,0,0.5);'>";
+									echo "<div style='height:400px; background-image:url(\""; 
 									setup_postdata($post);
-									the_post_thumbnail();
-									the_title();
-									the_excerpt();
+									echo get_the_post_thumbnail_url(); echo"\");'>";
+										
+									echo "</div>";
+									echo "<div style='min-height:150px' class='bg-dark text-light'>"; the_title(); echo "</div>";
 								echo "</div>";
 							echo "</div>";
 						}
 					} 
 				?>
-			</div>
 		</div>
-	</div>	
-
+	</div>
 </div>
 
 <?php get_footer(); ?>
