@@ -46,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<a class='post-link' href='" . $post_url . "'>
 								<h2>" . $post_title . "</h2>
 							</a>
-							<p>". $post_excerpt ."</p>
+							<p><a class='post-link' href='" . $post_url . "'>". $post_excerpt ."</a></p>
 							<p>" . $post_date . "</p>
 						</div>
 					";
