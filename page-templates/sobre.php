@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 			</div>
 			<div class="col-lg-6 col-xs-12 about-text h-100">
-				<h2 class="text-left">Sobre</h2>
+				<h2 class="text-left">About Me</h2>
 				<?php
 					if ( have_posts() ) : while ( have_posts() ) : the_post();
 						the_content();
