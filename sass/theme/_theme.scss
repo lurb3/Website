@@ -46,7 +46,7 @@ body {
     }
 }
 
-.home-links {
+.home-links { // nav-menu
     list-style-type:none;
     padding:0;
     text-align:center;
@@ -58,12 +58,12 @@ body {
         }
         a{
             color:$grey;
-            font-size:30px;
+            font-size:25px;
             font-weight:300;
             background: none;
             text-decoration: none;
             @media only screen and (max-width: 502px) {
-                font-size:20px;
+                font-size:15px;
             }
             &:after {
                 content: '';

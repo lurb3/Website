@@ -39,9 +39,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					$post_excerpt = get_the_excerpt();
 					$post_date = get_the_date();
 					echo "
-						<div class='col-4'>
+						<div class='col-xs-12 col-sm-12 col-md-12 col-lg-4'>
 							<a href='" . $post_url . "'>
-								<div class='p-5' style='width:100%; height:250px; background-image:url(\"" . $post_thumbnail . "\"); background-position:center; background-size:contain;'></div>
+								<div class='p-5' style='width:100%; height:250px; background-image:url(\"" . $post_thumbnail . "\"); background-position:center; background-size:cover;'></div>
 							</a>
 							<a class='post-link' href='" . $post_url . "'>
 								<h2>" . $post_title . "</h2>
