@@ -26,22 +26,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container">
 		<?php
 			include get_template_directory() . '/inc/nav-menu.php';
-		?> <!-- Include Nav Menu --> <!-- Include Nav Menu -->
+		?>
 		<div class="row mt-5">
-
 		<?php 
 			$args = array( 'numberposts' => -1); 
 			$posts= get_posts( $args );
-			$count = 0;
 			if ($posts) {
 				foreach ( $posts as $post ) {
-					echo "<div class='col-4'>";
-						echo "<div class='p-5' style='width:100%; height:250px; background-image:url(\""; setup_postdata($post); echo get_the_post_thumbnail_url(); echo"\"); background-position:center; background-size:contain;'>";
-						echo "</div>";
-						echo "<a class='post-link' href='"; echo get_permalink(); echo"'><h2>"; the_title(); echo "</h2></a>";
-						echo "<p>"; the_excerpt(); echo "</p>";
-						echo "<p>"; echo get_the_date(); "</p>";
-					echo "</div>";
+					$post_url = get_permalink();
+					$post_thumbnail = get_the_post_thumbnail_url();
+					$post_title = get_the_title();
+					$post_excerpt = get_the_excerpt();
+					$post_date = get_the_date();
+					echo "
+						<div class='col-4'>
+							<a href='" . $post_url . "'>
+								<div class='p-5' style='width:100%; height:250px; background-image:url(\"" . $post_thumbnail . "\"); background-position:center; background-size:contain;'></div>
+							</a>
+							<a class='post-link' href='" . $post_url . "'>
+								<h2>" . $post_title . "</h2>
+							</a>
+							<p>". $post_excerpt ."</p>
+							<p>" . $post_date . "</p>
+						</div>
+					";
 				}
 			} 
 		?>			
