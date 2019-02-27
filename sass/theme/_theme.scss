@@ -1,6 +1,11 @@
 
 body {
-    background-color:$primary;
+    #logo {
+        font-family: 'Anaheim', sans-serif;
+        font-size:60pt;
+        letter-spacing:5px;
+    }
+    background-color:white;
     font-family: $mainFont;
     a {
         color:$grey;
@@ -54,10 +59,10 @@ body {
 }
 
 .social-icons a{
-    color:$grey;
+    color:$blueColor;
     font-size:30px;
     &:hover {
-        color:white;
+        color:$grey;
     }
 }
 
@@ -80,16 +85,20 @@ body {
             @media only screen and (max-width: 502px) {
                 font-size:15px;
             }
-            &:after {
+            &:hover {
+                color:$blueColor;
+                transition: 300ms ease-in;
+            } 
+            &:before {
                 content: '';
                 width: 0px;
                 height: 1px;
                 display: block;
-                background: #242424;
+                background: $blueColor;
                 transition: 300ms ease-in-out;
             }
             &:hover{
-                &:after {
+                &:before {
                     width:100%;
                 }
             }
