@@ -370,7 +370,7 @@ msgstr "Εργαλειοθήκη δεξιά"
 
 #: inc/customizer.php:130
 msgid "Left sidebar"
-msgstr "Εργαλειοθήκη αριστερά"
+msgstr "Εργαλειο��ήκη αριστερά"
 
 #: inc/customizer.php:131
 msgid "Left & Right sidebars"

@@ -24,6 +24,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 <div class="container frontpage">
 	<div class="row frontpage-copy">
 		<div class="col-12 text-center">
+			<p id="logo">{G}</p>
 			<h1 class="m-auto pb-2 w-100 text-center">Gustavo Monteiro</h1>
 			<h2 class="m-auto pb-5 w-100 text-center">Junior Front-End Developer</h2>
 			<p class="m-auto w-100 text-center">

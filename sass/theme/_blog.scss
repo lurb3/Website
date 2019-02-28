@@ -16,4 +16,49 @@
             text-decoration: underline;
         }
     }
+    .blog-post {
+        padding:100px;
+        position:relative;
+        border-bottom:3px solid white;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image:
+            linear-gradient(to bottom right,rgba(0,0,0,0.5),rgba(0,0,0,1));
+            opacity:1;
+            transition: 400ms ease-in;
+        }
+        &:hover {
+            &:before {
+                opacity: 0;
+                transition: 400ms ease-in;
+            }
+        }
+        .category {
+            color:$blueColor;
+        }
+
+        .author {
+            color:white;
+        }
+
+        .date {
+            color:$blueColor;
+            font-size:30px;
+        }
+
+        .post-title {
+            color:white;
+            font-weight: 700;
+        }
+    }
+    .blog-links {
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
