@@ -43,15 +43,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 				echo "
 				<a class='blog-links' href='" . $post_url . "'>
 					<div class='row blog-post' style='background-image:url(\"" . $post_thumbnail . "\"); background-position:center; background-size:cover;'>
-					<div class='col-4'>
+					<div class='col-md-6 col-xs-12'>
 						<p class='m-0 p-0 category'>"; 
 						for ($i=0; $i<sizeof($post_category); $i++) {
 							echo $post_category[$i] -> name;
 						}
-							echo "</p></p>
+							echo "</p>
 						<p class='m-0 p-0 author'>By Gustavo Monteiro</p>
 					</div>
-					<div class='col-8'>
+					<div class='col-md-6 col-xs-12'>
 						<p class='m-0 p-0 date'>" . $post_date . "</p>
 						<h2 class='m-0 p-0 post-title'>" . $post_title . "</h2>
 					</div>

@@ -20,6 +20,9 @@
         padding:100px;
         position:relative;
         border-bottom:3px solid white;
+        @media only screen and (max-width: 502px) {
+            padding:100px 0px 100px 0px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -40,20 +43,36 @@
         }
         .category {
             color:$blueColor;
+            @media only screen and (max-width: 767px) {
+                font-size:13px;
+                text-align:center;
+            }
         }
 
         .author {
             color:white;
+            @media only screen and (max-width: 767px) {
+                font-size:13px;
+                text-align:center;
+            }
         }
 
         .date {
             color:$blueColor;
             font-size:30px;
+            @media only screen and (max-width: 767px) {
+                padding-top:10px;
+                font-size:23px;
+                text-align:center;
+            }
         }
 
         .post-title {
             color:white;
             font-weight: 700;
+            @media only screen and (max-width: 767px) {
+                text-align:center;
+            }
         }
     }
     .blog-links {
