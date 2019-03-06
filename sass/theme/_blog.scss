@@ -17,9 +17,9 @@
         }
     }
     .blog-post {
-        padding:100px;
+        padding:60px;
         position:relative;
-        border-bottom:3px solid white;
+        margin-bottom:10px;
         @media only screen and (max-width: 502px) {
             padding:100px 0px 100px 0px;
         }
@@ -31,7 +31,7 @@
             bottom: 0;
             left: 0;
             background-image:
-            linear-gradient(to bottom right,rgba(0,0,0,0.5),rgba(0,0,0,1));
+            linear-gradient(to bottom right,rgba(0,0,0,0.38),black);
             opacity:1;
             transition: 400ms ease-in;
         }
