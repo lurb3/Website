@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div id="blog">
 
-	<div class="container mw-100">
+	<div class="container">
 		<?php
 			include get_template_directory() . '/inc/nav-menu.php';
 		?>
