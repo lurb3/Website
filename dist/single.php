@@ -54,7 +54,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			$content = $content_post -> post_content;
 			$previous_post = get_previous_post();
 			echo "
-				<div class='pl-5 pr-5 post-content'>
+				<div class='post-content'>
 					<p>" . $content . "</p>
 					<p>
 						<a href='" . get_permalink( $previous_post->ID ) . "'>
