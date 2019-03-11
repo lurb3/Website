@@ -592,7 +592,7 @@ msgstr "הכתובות הבאות ישמשו בתהליך הרכישה באופ�
 
 #: woocommerce/myaccount/my-address.php:71
 msgid "You have not set up this type of address yet."
-msgstr "לא הגדרת את סוג הכתובת הזאת עדיין."
+msgstr "לא הגדרת את סוג ��כתובת הזאת עדיין."
 
 #: woocommerce/myaccount/my-orders.php:13
 msgid "Order"
