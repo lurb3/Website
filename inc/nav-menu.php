@@ -12,7 +12,7 @@
                     echo "'>{G}</a></li>";
                 }
             ?>
-            <li><a href="<?php echo get_page_link( get_page_by_title( "sobre" )->ID ); ?>">About Me</a></li>
+            <li><a href="<?php echo get_page_link( get_page_by_title( "about me" )->ID ); ?>">About Me</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="<?php echo get_page_link( get_page_by_title( "blog" )->ID ); ?>">Blog</a></li>
             <li><a href="#">Curriculum</a></li>

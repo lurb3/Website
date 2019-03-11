@@ -16,33 +16,40 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div id="about">
-
-	<div class="container about-container">
+	<div class="container mw-100 m-0">
 		<?php
 			include get_template_directory() . '/inc/nav-menu.php';
-		?> <!-- Include Nav Menu --> <!-- Include Nav Menu -->
-		<div class="row p-3 text-center about-content">
-			<div class="col-lg-6 col-xs-12">
-				<div class="thumbnail pb-3">
-					<?php 
-						if ( have_posts() ) : while ( have_posts() ) : the_post();
-							the_post_thumbnail(); 
-						endwhile; endif;
-					?>
-				</div>
-			</div>
-			<div class="col-lg-6 col-xs-12 about-text h-100">
-				<h2 class="text-left">About Me</h2>
-				<?php
-					if ( have_posts() ) : while ( have_posts() ) : the_post();
-						the_content();
-					endwhile; endif; 
-				?>
-			</div>
-		</div>
-		
-	</div>	
 
+			$post_thumbnail = get_the_post_thumbnail_url();
+			$post_title = get_the_title();
+			echo "
+			<div
+				class='row post-image'
+				style='background-image:url(\"" . $post_thumbnail . "\"); 	background-position:center; background-size:cover; height:300px;'
+			>
+					<div class='m-auto text-center' style='z-index:999;'>
+						<h1 class='text-light'>
+							" . $post_title . "
+						</h1>
+					</div>
+				</div>
+			";		
+		?>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<?php
+				$post_ID = get_the_ID();
+				$post = get_post($post_ID);
+				echo"
+						<div class='about-me-content mt-5'>
+							"; echo $post -> post_content; echo"
+						</div>
+					";
+			?>
+		</div>
+	</div>
 </div>
 
 <?php get_footer(); ?>
