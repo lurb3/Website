@@ -116,6 +116,12 @@ body {
 
 .blog-post {
 
+    h2 {
+        font-size:40px;
+        font-weight:800;
+        margin-top:50px;
+    }
+
     .post-image {
         position:relative;
         &:before {
@@ -133,12 +139,18 @@ body {
     }
     
     .post-content {
+        p {
+            font-family: jaf-facitweb, sans-serif;
+            font-weight: 200;
+            font-size:20px;
+            line-height:30pt;
+        }
         @media only screen and (max-width: 502px) {
             padding-left:30px;
             padding-right:30px;
         }
-        padding-left:14rem;
-        padding-right:14rem;
+        padding-left:12rem;
+        padding-right:12rem;
         img {
             display:block;
         }
