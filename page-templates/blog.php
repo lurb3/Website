@@ -46,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class='col-md-6 col-xs-12'>
 						<p class='m-0 p-0 category'>"; 
 						for ($i=0; $i<sizeof($post_category); $i++) {
-							echo $post_category[$i] -> name;
+							echo $post_category[$i] -> name . "<br>";
 						}
 							echo "</p>
 						<p class='m-0 p-0 author'>By Gustavo Monteiro</p>
