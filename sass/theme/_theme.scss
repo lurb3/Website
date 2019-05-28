@@ -4,7 +4,7 @@ body {
         font-size:60pt;
         letter-spacing:5px;
     }
-    background-color:white;
+    background-color:#141419;
     font-family: $mainFont;
     a {
         color:$grey;
@@ -35,7 +35,7 @@ body {
 }
 
 .frontpage-copy {
-    color: $grey;
+    color: white;
     h1 {
         font-size: $mainFontsize;
         font-weight:300;
@@ -81,7 +81,7 @@ body {
             padding-right:0px;
         }
         a{
-            color:$grey;
+            color:white;
             font-size:25px;
             font-weight:300;
             background: none;
@@ -144,6 +144,10 @@ body {
             font-weight: 200;
             font-size:20px;
             line-height:30pt;
+            color:white;
+        }
+        h2 {
+            color:white;
         }
         @media only screen and (max-width: 1199px) {
             padding-left:30px;
