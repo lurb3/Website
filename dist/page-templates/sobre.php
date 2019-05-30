@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			$post_title = get_the_title();
 			echo "
 			<div
-				class='row page-post-image'
+				class='row post-image'
 				style='background-image:url(\"" . $post_thumbnail . "\"); 	background-position:center; background-size:cover; height:300px;'
 			>
 					<div class='m-auto text-center' style='z-index:999;'>
