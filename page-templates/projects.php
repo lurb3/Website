@@ -15,7 +15,7 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div id="projects">
+<div id="projects" class="container">
     <!-- NAV Menu -->
     <?php
         include get_template_directory() . '/inc/nav-menu.php';
@@ -29,63 +29,67 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
         </div>
         <div class="row">
-            <!-- TODO: Add Links to each card -->
-            <!-- TODO: create a for loop for each card -->
-            <!-- TODO: Seperate cards through categories -->
-            <div class="col-lg-6">
-                <div class="projectsCard" alt="Web App - Budget App" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/budget-app.jpg);'">
-                    <div class="cardText">
-                        <h2>BudgetApp</h2>
-                        <span>Web App to control personal spendings</span>
-                        <span>Time Spent: 1 month (WIP)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="projectsCard" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/gustavo-website.jpg);'">
-                    <div class="cardText">
-                        <h2>Gustavo Monteiro Website</h2>
-                        <span>Personal website + blog</span>
-                        <span>Time Spent: 2 weeks (WIP)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="projectsCard" alt="Tenduledo Landing Page" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/tenduledo-project.jpg);'">
-                    <div class="cardText">
-                        <h2>Tendoledu</h2>
-                        <span>Landing Page for School Business</span>
-                        <span>Time Spent: 2 days</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="projectsCard" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/ana-website.jpg);'">
-                    <div class="cardText">
-                        <h2>Ana Peneda Website</h2>
-                        <span>Website to promote personal brand</span>
-                        <span>Time Spent: 1 weeks (WIP)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="projectsCard" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/tenduledo-project.jpg);'">
-                    <div class="cardText">
-                        <h2>Counter App</h2>
-                        <span>Web App to count time spent coding</span>
-                        <span>Time Spent: 0 days (WIP)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="projectsCard" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/tenduledo-project.jpg);'">
-                    <div class="cardText">
-                        <h2>Dashboard</h2>
-                        <span>Dashboard template for public use</span>
-                        <span>Time Spent: 0 days (WIP)</span>
-                    </div>
-                </div>
-            </div>
+            <?php
+            /*
+                TODO: Put Array into backoffice
+                TODO: Button bellow?
+                TODO: &:hover - show background image
+                TODO: Add Links to each card
+                TODO: Seperate cards through categories
+            */
+                $cardsArray = [
+                    'BudgetApp' => [
+                        'Url' => '',
+                        'Title' => 'BudgetApp',
+                        'SubTitle' => 'Web App to control personal spendings',
+                        'TimeSpent' => '1 month (WIP)'
+                    ],
+                    'GustavoMonteiro' => [
+                        'Url' => '',
+                        'Title' => 'Gustavo Monteiro Website',
+                        'SubTitle' => 'Personal website + blog',
+                        'TimeSpent' => '2 weeks (WIP)'
+                    ],
+                    'Tendoledu' => [
+                        'Url' => '',
+                        'Title' => 'Tendoledu',
+                        'SubTitle' => 'Landing Page for School Business',
+                        'TimeSpent' => '2 days'
+                    ],
+                    'AnaPeneda' => [
+                        'Url' => '',
+                        'Title' => 'Ana Peneda Website',
+                        'SubTitle' => 'Website to promote personal brand',
+                        'TimeSpent' => '1 week (WIP)'
+                    ],
+                    'CounterApp' => [
+                        'Url' => '',
+                        'Title' => 'Counter App',
+                        'SubTitle' => 'Web App to count time spent coding',
+                        'TimeSpent' => '0 days (WIP)'
+                    ],
+                    'Dashboard' => [
+                        'Url' => '',
+                        'Title' => 'Dashboard',
+                        'SubTitle' => 'Dashboard template for public use',
+                        'TimeSpent' => '0 days (WIP)'
+                    ]
+                ];
+
+                foreach($cardsArray as $card) {
+                    echo "
+                        <div class='col-lg-12'>
+                            <div class='projectsCard'>
+                                <div class='cardText'>
+                                    <h2>" . $card['Title'] . "</h2>
+                                    <span>" . $card['SubTitle'] . "</span>
+                                    <span>Time Spent: " . $card['TimeSpent'] . "</span>
+                                </div>
+                            </div>
+                        </div>
+                    ";
+                }
+            ?>
         </div>
         
     </div>
