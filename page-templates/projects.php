@@ -24,7 +24,6 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="container">
         <div class="row mb-5">
             <div class="text-center m-auto">
-            <img style="font-size:30px;" draggable="false" class="emoji" alt="💻" src="https://s.w.org/images/core/emoji/11.2.0/svg/1f4bb.svg">
             <h1 class="m-auto">Projects</h1>
             </div>
         </div>
