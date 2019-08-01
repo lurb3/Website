@@ -37,38 +37,38 @@ $container = get_theme_mod( 'understrap_container_type' );
             */
                 $cardsArray = [
                     'BudgetApp' => [
-                        'Url' => '',
+                        'Url' => 'https://github.com/lurb3/budgetApp',
                         'Title' => 'BudgetApp',
                         'SubTitle' => 'Web App to control personal spendings',
-                        'TimeSpent' => '1 month (WIP)',
+                        'TimeSpent' => '2 weeks (WIP)',
                         'Image' => 'budget-app.jpg'
                     ],
                     'GustavoMonteiro' => [
-                        'Url' => 'https://gustavomonteiro.pt/',
+                        'Url' => 'https://github.com/lurb3/Website',
                         'Title' => 'Gustavo Monteiro Website',
                         'SubTitle' => 'Personal website + blog',
-                        'TimeSpent' => '2 weeks (WIP)',
+                        'TimeSpent' => '2 weeks',
                         'Image' => 'gustavo-website.jpg'
                     ],
                     'Tendoledu' => [
-                        'Url' => 'https://tendoledu.com/students/',
+                        'Url' => 'https://github.com/lurb3/tendoledu',
                         'Title' => 'Tendoledu',
                         'SubTitle' => 'Landing Page for School Business',
                         'TimeSpent' => '2 days',
                         'Image' => 'tenduledo-project.jpg'
                     ],
                     'AnaPeneda' => [
-                        'Url' => 'https://gustavomonteiro.pt/ana-website/',
+                        'Url' => 'https://github.com/lurb3/ana-website',
                         'Title' => 'Ana Peneda Website',
                         'SubTitle' => 'Website to promote personal brand',
                         'TimeSpent' => '1 week (WIP)',
                         'Image' => 'ana-website.jpg'
                     ],
                     'CounterApp' => [
-                        'Url' => '',
+                        'Url' => 'https://github.com/lurb3/CounterApp',
                         'Title' => 'Counter App',
                         'SubTitle' => 'Web App to count time spent coding',
-                        'TimeSpent' => '0 days (WIP)',
+                        'TimeSpent' => '1 week (WIP)',
                         'Image' => ''
                     ],
                     'Dashboard' => [
