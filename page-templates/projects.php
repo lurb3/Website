@@ -68,8 +68,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                         'Url' => 'https://github.com/lurb3/CounterApp',
                         'Title' => 'Counter App',
                         'SubTitle' => 'Web App to count time spent coding',
-                        'TimeSpent' => '1 week (WIP)',
-                        'Image' => ''
+                        'TimeSpent' => '2 weeks (WIP)',
+                        'Image' => 'counter-app.jpg'
                     ],
                     'Dashboard' => [
                         'Url' => '',
